@@ -1,6 +1,5 @@
 function minDate(dates) {
-  //write you code here
-	
+    // Convert the date strings to Date objects
     const dateObjects = dates.map(dateStr => new Date(dateStr.replace(/\//g, '-')));
 
     // Find the minimum date object
@@ -17,8 +16,6 @@ function minDate(dates) {
 // Test cases
 console.log(minDate(["2023/03/01", "2023/03/02", "2023/03/03"])); // "2023/03/01"
 console.log(minDate(["2023/01/01", "2023/02/02", "2022/12/31"])); // "2022/12/31"
-
-}
 
 // Do not change the code
 
@@ -56,3 +53,4 @@ var dates = [
 ];
 
 alert(minDate(dates));
+
